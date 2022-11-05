@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".navBar");
+  var hero = document.querySelector(".testimus");
   header.classList.toggle("sticky", window.scrollY > 200);
+  hero.classList.toggle("stickyFix", window.scrollY > 200);
 });
 
 const nav = document.querySelector("nav");

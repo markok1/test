@@ -29,6 +29,7 @@
     ></script>
   </head>
   <body>
+    <div class="testimus"></div>
     <div class="navBar">
       <div class="container containerNav">
         <div class="stats">
@@ -603,6 +604,14 @@
     <script src="js/main.js"></script>
     <script>
       AOS.init();
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".navBar");
+        var hero = document.querySelector(".hero");
+        header.classList.toggle("sticky", window.scrollY > 200);
+        hero.classList.toggle("stickyFix", window.scrollY > 200);
+      });
+
       $(".slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
