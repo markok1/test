@@ -46,6 +46,12 @@ h1, h2, h3, h4, h5, p {
 .bold{
     font-weight: 700;
 }
+.sticky{
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 2;
+    width: 100vw;
+}
 
 .navBar{
     height: 135px;
@@ -2774,6 +2780,7 @@ h1, h2, h3, h4, h5, p {
         left: 0px;
         transform: translateX(-350px);
         transition: transform 0.5s ease-in-out;
+        z-index: 3;
     }
     .navBar .containerNav .theNav nav ul li {
         padding-left: 60px!important;
@@ -3472,6 +3479,10 @@ h1, h2, h3, h4, h5, p {
         }
         .FaQ {
             height: 544px;
+        }
+
+        nav{
+            top: 179px;
         }
 
   }

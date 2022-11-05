@@ -1,4 +1,7 @@
-AOS.init();
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".navBar");
+  header.classList.toggle("sticky", window.scrollY > 200);
+});
 
 const nav = document.querySelector("nav");
 const openMenu = document.getElementById("openMenu");
@@ -13,24 +16,6 @@ closeMenu.addEventListener("click", () => {
   nav.classList.remove("showMenu");
   openMenu.style.display = "block";
   closeMenu.style.display = "none";
-});
-
-$(function () {
-  $(".multiple-items").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: false,
-    prevArrow:
-      '<button class="slide-arrow prev-arrow"><img src="img/arrow_left.svg" alt=""></button>',
-    nextArrow:
-      '<button class="slide-arrow next-arrow"><img src="img/arrow_right.svg" alt=""></button>',
-    autoplay: false,
-    autoplaySpeed: 4000,
-    centerMode: true,
-    centerPadding: "0",
-    variableWidth: true,
-  });
 });
 
 jQuery(function () {
