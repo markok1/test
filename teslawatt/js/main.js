@@ -1,3 +1,5 @@
+AOS.init();
+
 const nav = document.querySelector("nav");
 const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");
